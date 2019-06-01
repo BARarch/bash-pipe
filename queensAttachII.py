@@ -22,6 +22,8 @@ def queensAttack(n, k, r_q, c_q, obstacles):
         for obj in obstacles:
             S[get_row(obj) - 1] |= 1 << (n - get_col(obj))
 
+        return S
+
     def show_board(S):
         width = len(S)
         for row in reversed(S):
@@ -29,9 +31,9 @@ def queensAttack(n, k, r_q, c_q, obstacles):
             print(('{0:0' + str(width) + 'b}').format(row))
 
     S = [0] * n                 #an number on the list for each row
-    make_board(S, obstacles)
+    S = make_board(S, obstacles)
 
-    #show_board(S)
+    show_board(S)
     return 0
 
 
