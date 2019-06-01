@@ -7,6 +7,8 @@ else
   TITLE="$1"
 fi
 
+echo ""
+
 if [ -z "$2" ]; then
   echo "Testing $TITLE..."
 else
