@@ -18,6 +18,7 @@ if [ -z "$2" ]; then
     echo ""
     echo "Testing $TITLE with $f..."
     $TITLE.py < $f
+    echo "RESULT Output:"
     cat "$OUTS"
   done
 else
@@ -26,5 +27,6 @@ else
   SINGLECASE="$TITLE-cases/$2"
   echo "Testing $TITLE with $2..."
   $TITLE.py < $SINGLECASE
+  echo "RESULT Output:"
   cat "$OUTS"
 fi
