@@ -6,3 +6,6 @@ if __name__ == "__main__":
 
 
 ## Back in Buisness: What did we do?
+# Make Command -> chmod +x commandName.py
+# Make Sure Directory of command is in PATH -> source ~/bash_profile
+# Execute -> commandName.py <- InputFile 
