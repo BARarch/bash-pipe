@@ -7,11 +7,16 @@ else
   TITLE="$1"
 fi
 
-echo ""
-
 if [ -z "$2" ]; then
-  echo "Testing $TITLE..."
+  FILES=$TITLE-cases/*
+  for f in $FILES
+  do
+    echo ""
+    echo "Testing $TITLE with $f..."
+    $TITLE.py < $f
+  done
 else
+  echo ""
   SINGLECASE="$TITLE-cases/$2"
   echo "Testing $TITLE with $2..."
   $TITLE.py < $SINGLECASE
