@@ -7,22 +7,14 @@ else
   TITLE="$1"
 fi
 
-d=date
-f=+'%y%m%d'
-da=$($d $f)
-echo "$TITLE.py"
-echo "Enter code stub below:"
-echo "#!/Users/anthonyquivers/anaconda3/bin/python" > "$TITLE.py"
-echo "#Date Started: $da" >> "$TITLE.py"
-echo "" >> "$TITLE.py"
-cat "$TITLE.py"
-cat >> "$TITLE.py"
+cd "$TITLE-cases"
 
-chmod +x "$TITLE.py"
+n=$(ls -l | wc -l)
+
+echo "testcase$n.txt"
+echo "Enter case text:"
+
+cat >> "testcase$n.txt"
 
 
-git add .
-git commit -a -m "Problem Started"
-git push origin master
 
-git status
