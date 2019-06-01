@@ -7,5 +7,6 @@ if __name__ == "__main__":
 
 ## Back in Buisness: What did we do?
 # Make Command -> chmod +x commandName.py
+# Include location of interpreter -> #!/Users/anthonyquivers/anaconda3/bin/python
 # Make Sure Directory of command is in PATH -> source ~/bash_profile
-# Execute -> commandName.py <- InputFile 
+# Execute -> commandName.py < InputFile 
