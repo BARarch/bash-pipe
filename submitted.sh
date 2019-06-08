@@ -18,7 +18,7 @@ ts=$($d $ft)
 if [ -z "$2" ]; then
   git commit -a -m "Submitted on $td at $ts"
 else
-  MSG = $2
+  MSG="$2"
   git commit -a -m "Submitted on $td at $ts $MSG"
 fi  
 git push origin master

@@ -63,4 +63,3 @@ if __name__ == '__main__':
 
     fptr.close()
 
-    ## This is an extra line
