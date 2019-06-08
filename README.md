@@ -14,3 +14,12 @@ Create the solution stream file [the one ftpr points to]. Set the path as an env
 
 ## Problem 3: The tester
 In the hackerrank repo there will be a solutions file for each problem and a folder with test cases
+
+## Solution
+bash init.sh codename
+bash case.sh codename
+bash case.sh codename testId
+bash test.sh codename
+bash test.sh codename testcaseName
+bash submitted.sh codename
+bash submitted.sh codename message
