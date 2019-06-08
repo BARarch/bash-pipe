@@ -11,7 +11,7 @@ cd "$TITLE-cases"
 
 if [ -z "$2" ]; then
   d=date
-  f=+'%y%m%d-%s'
+  f=+'%y%m%d-%T'
   id=$($d $f)
 else
   id="-$2"
