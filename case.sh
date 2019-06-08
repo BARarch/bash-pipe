@@ -9,12 +9,18 @@ fi
 
 cd "$TITLE-cases"
 
-n=$(ls -l | wc -l)
+if [ -z "$2" ]; then
+  d=date
+  f=+'%y%m%d-%s'
+  id=$($d $f)
+else
+  id="-$2"
+fi
 
-echo "testcase$n.txt"
+echo "testcase$id.txt"
 echo "Enter case text:"
 
-cat >> "testcase$n.txt"
+cat >> "testcase$id.txt"
 
 
 
