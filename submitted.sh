@@ -7,6 +7,8 @@ else
   TITLE="$1"
 fi
 
+rm -r "$TITLE-cases"
+
 git add .
 
 d=date
