@@ -11,7 +11,7 @@ OUTS="test-run-output.txt"
 export OUTPUT_PATH="$OUTS"
 
 if [ -z "$2" ]; then
-  FILES=$TITLE-cases/*
+  FILES=cases-$TITLE/*
   for f in $FILES
   do
     echo "" > "$OUTS"
@@ -24,7 +24,7 @@ if [ -z "$2" ]; then
 else
   echo ""
   echo "" > "$OUTS"
-  SINGLECASE="$TITLE-cases/$2"
+  SINGLECASE="cases-$TITLE/$2"
   echo "Testing $TITLE with $2..."
   $TITLE.py < $SINGLECASE
   echo "RESULT Output:"

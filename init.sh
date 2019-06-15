@@ -20,7 +20,7 @@ cat >> "$TITLE.py"
 
 chmod +x "$TITLE.py"
 
-mkdir "$TITLE-cases"
+mkdir "cases-$TITLE"
 
 
 git add .

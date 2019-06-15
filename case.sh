@@ -7,7 +7,7 @@ else
   TITLE="$1"
 fi
 
-cd "$TITLE-cases"
+cd "cases-$TITLE"
 
 if [ -z "$2" ]; then
   d=date
