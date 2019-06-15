@@ -7,7 +7,7 @@ else
   TITLE="$1"
 fi
 
-rm -r "$TITLE-cases"
+rm -r "$cases-$TITLE"
 
 git add .
 
