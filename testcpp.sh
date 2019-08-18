@@ -28,3 +28,5 @@ else
   a.out < $SINGLECASE
   echo ""
 fi
+
+rm a.out
