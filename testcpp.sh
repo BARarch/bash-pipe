@@ -7,7 +7,8 @@ else
   TITLE="$1"
 fi
 
-c++4.9 $TITLE.cpp 
+echo "Compiling $TITLE.cpp..."
+c++-4.9 $TITLE.cpp 
 
 if [ -z "$2" ]; then
   FILES=cases-$TITLE/*

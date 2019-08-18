@@ -12,7 +12,7 @@ f=+'%y%m%d'
 da=$($d $f)
 echo "$TITLE.cpp"
 echo "Enter code stub below:"
-echo "#Date Started: $da" > "$TITLE.cpp"
+echo "//Date Started: $da" > "$TITLE.cpp"
 echo "" >> "$TITLE.cpp"
 cat "$TITLE.cpp"
 cat >> "$TITLE.cpp"
