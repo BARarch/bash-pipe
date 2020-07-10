@@ -15,6 +15,8 @@ echo "Enter code stub below:"
 echo "#!/Users/anthonyquivers/anaconda3/bin/python" > "$TITLE.py"
 echo "#Date Started: $da" >> "$TITLE.py"
 echo "" >> "$TITLE.py"
+cat "bash-pipe/testEnvironmentHeader.py" >> "$TITLE.py"
+echo "" >> "$TITLE.py"
 cat "$TITLE.py"
 cat >> "$TITLE.py"
 
