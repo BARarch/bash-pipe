@@ -1,5 +1,5 @@
 #!/bin/bash
-
+REL="../bash-pipe/"
 if [ -z "$1" ]; then
   echo "What are you calling this"
   read TITLE
@@ -15,7 +15,7 @@ echo "Enter code stub below:"
 echo "#!/Users/anthonyquivers/anaconda3/bin/python" > "$TITLE.py"
 echo "#Date Started: $da" >> "$TITLE.py"
 echo "" >> "$TITLE.py"
-cat "bash-pipe/testEnvironmentHeader.py" >> "$TITLE.py"
+cat $REL"testEnvironmentHeader.py" >> "$TITLE.py"
 echo "" >> "$TITLE.py"
 cat "$TITLE.py"
 cat >> "$TITLE.py"
