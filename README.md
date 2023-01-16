@@ -1,5 +1,5 @@
-# Quivers Technologies Bash-Pipe Problem Set
-We are rerouting standard inputs to create an offline Hackerrank problem tester that is to handle solution codes and testcases offline.  Hackerrank is fundamentally useless and is, in many cases a waste of time, and I will not let my coding skills atrophy.  
+# Quivers Technologies Bash-Pipe
+This is a tester for computer science problems on the Hackerrank platform.  This script allows users to download problems and testcases offine from anywhere, for expedited testing and unlimted attempts.  This is also a tool to be used during competition [no worries it is legal and not considered cheating in most cases]. We are rerouting standard inputs to create bash shell processes that handle solution code and testcases locally.  
 
 ## Problem 1 Rerouting I put using bash
 Set up a test repo for bash code. Find a bash command that rerouts input from the keyboard to the file testcase0.txt. Show the output using echo or cat.
